@@ -5,12 +5,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'echo hello' 
-            }
-        }
-        stage('Test') {
-            steps {
-                sh 'sudo ./jenkins/scripts/test.sh'
+                sh 'npm install -g' 
             }
         }
     }
