@@ -1,9 +1,10 @@
 pipeline {
     agent any
+    tools {nodejs "npm"}
     stages {
         stage('Build') {
             steps {
-                sh 'npm install -g'
+                sh 'npm install'
             }
         }
         stage('Test') {
